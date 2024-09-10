@@ -1,0 +1,588 @@
+[INFO] Input arguments:
+[INFO]   learning_rate: 0.0005
+[INFO]   batch_size: 8
+[INFO]   weight_decay: 0.01
+[INFO]   lr_decay: 0.99
+[INFO]   epochs: 45
+[INFO]   train_2d: False
+[INFO]   model_name: MyModule
+[INFO]   n_layers: 6
+[INFO]   dim_in: 3
+[INFO]   dim_feat: 288
+[INFO]   dim_rep: 512
+[INFO]   dim_out: 3
+[INFO]   mlp_ratio: 4
+[INFO]   act_layer: gelu
+[INFO]   attn_drop: 0.0
+[INFO]   drop: 0.0
+[INFO]   drop_path: 0.0
+[INFO]   use_layer_scale: True
+[INFO]   layer_scale_init_value: 1e-05
+[INFO]   use_adaptive_fusion: True
+[INFO]   num_heads: 16
+[INFO]   qkv_bias: False
+[INFO]   qkv_scale: None
+[INFO]   hierarchical: False
+[INFO]   use_temporal_similarity: True
+[INFO]   neighbour_num: 2
+[INFO]   temporal_connection_len: 1
+[INFO]   use_tcn: False
+[INFO]   graph_only: False
+[INFO]   n_frames: 243
+[INFO]   data_root: data/motion3d/
+[INFO]   data_root_2d: data/motion2d/
+[INFO]   subset_list: ['H36M-243']
+[INFO]   dt_file: h36m_sh_conf_cam_source_final.pkl
+[INFO]   num_joints: 17
+[INFO]   root_rel: True
+[INFO]   add_velocity: False
+[INFO]   lambda_3d_velocity: 20.0
+[INFO]   lambda_scale: 0.5
+[INFO]   lambda_lv: 0.0
+[INFO]   lambda_lg: 0.0
+[INFO]   lambda_a: 0.0
+[INFO]   lambda_av: 0.0
+[INFO]   use_proj_as_2d: True
+[INFO]   flip: True
+[INFO]   name: mymodule
+INFO: Number of parameter count: 22.264247 M
+Run ID: vrlhbu3i
+[INFO] epoch 0
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:12<00:00,  1.41it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [03:23<00:00,  1.37it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 220.4624828356421 mm
+Acceleration error: 1.615550149606488 mm/s^2
+P2 AVG Error: 145.04489604706322 mm
+---------------------
+[INFO] epoch 1
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:22<00:00,  1.40it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:31<00:00,  1.84it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 72.47033732602898 mm
+Acceleration error: 1.6923837979725016 mm/s^2
+P2 AVG Error: 51.5449885280029 mm
+---------------------
+[INFO] epoch 2
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:20<00:00,  1.40it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [03:16<00:00,  1.42it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 53.21316913122382 mm
+Acceleration error: 1.521726579347341 mm/s^2
+P2 AVG Error: 39.90751244258047 mm
+---------------------
+[INFO] epoch 3
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:35<00:00,  1.39it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:28<00:00,  1.88it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 43.296650008579405 mm
+Acceleration error: 1.340496921221352 mm/s^2
+P2 AVG Error: 34.79345466447977 mm
+---------------------
+[INFO] epoch 4
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:39<00:00,  1.44it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:38<00:00,  1.76it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 42.73920144487158 mm
+Acceleration error: 1.356614363554115 mm/s^2
+P2 AVG Error: 32.97746476513372 mm
+---------------------
+[INFO] epoch 5
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:33<00:00,  1.39it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:43<00:00,  1.71it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 41.01215212244442 mm
+Acceleration error: 1.196731229573492 mm/s^2
+P2 AVG Error: 31.069214486674113 mm
+---------------------
+[INFO] epoch 6
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:31<00:00,  1.39it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [03:23<00:00,  1.37it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 43.36762106389404 mm
+Acceleration error: 1.1417676329040227 mm/s^2
+P2 AVG Error: 31.579400141596913 mm
+---------------------
+[INFO] epoch 7
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:03<00:00,  1.48it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:19<00:00,  2.01it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 39.97487397846262 mm
+Acceleration error: 1.06560180989672 mm/s^2
+P2 AVG Error: 29.58351114590188 mm
+---------------------
+[INFO] epoch 8
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:12<00:00,  1.41it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [03:32<00:00,  1.31it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 35.8499723060249 mm
+Acceleration error: 0.9586981058664125 mm/s^2
+P2 AVG Error: 27.33586444347935 mm
+---------------------
+[INFO] epoch 9
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:41<00:00,  1.39it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:36<00:00,  1.78it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 34.897522675998786 mm
+Acceleration error: 0.8799712820714274 mm/s^2
+P2 AVG Error: 27.53836513030833 mm
+---------------------
+[INFO] epoch 10
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:33<00:00,  1.39it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:36<00:00,  1.79it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 36.17496508375707 mm
+Acceleration error: 0.9038239552504994 mm/s^2
+P2 AVG Error: 27.670414080442445 mm
+---------------------
+[INFO] epoch 11
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:09<00:00,  1.41it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:25<00:00,  1.92it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 34.141212043208384 mm
+Acceleration error: 0.9021675703526749 mm/s^2
+P2 AVG Error: 26.1452936474263 mm
+---------------------
+[INFO] epoch 12
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:52<00:00,  1.43it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:29<00:00,  1.87it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 30.811218621943947 mm
+Acceleration error: 0.83173414983529 mm/s^2
+P2 AVG Error: 24.785054358740645 mm
+---------------------
+[INFO] epoch 13
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:12<00:00,  1.41it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:30<00:00,  1.86it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 35.00415261282206 mm
+Acceleration error: 0.8636938490024312 mm/s^2
+P2 AVG Error: 26.04568599104862 mm
+---------------------
+[INFO] epoch 14
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:40<00:00,  1.44it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:25<00:00,  1.92it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 32.01782081695533 mm
+Acceleration error: 0.8247622953468656 mm/s^2
+P2 AVG Error: 23.95719521823369 mm
+---------------------
+[INFO] epoch 15
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:00<00:00,  1.42it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:32<00:00,  1.83it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 30.05227576115296 mm
+Acceleration error: 0.8171732541523059 mm/s^2
+P2 AVG Error: 24.74024181524896 mm
+---------------------
+[INFO] epoch 16
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:13<00:00,  1.41it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:34<00:00,  1.81it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 31.42164897027363 mm
+Acceleration error: 0.7812395831476844 mm/s^2
+P2 AVG Error: 24.713889454795602 mm
+---------------------
+[INFO] epoch 17
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:17<00:00,  1.46it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:24<00:00,  1.93it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 28.943026621809494 mm
+Acceleration error: 0.7691825252881437 mm/s^2
+P2 AVG Error: 22.87951416030587 mm
+---------------------
+[INFO] epoch 18
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [24:35<00:00,  1.50it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:25<00:00,  1.91it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 34.4812906673208 mm
+Acceleration error: 0.7695788406224143 mm/s^2
+P2 AVG Error: 25.280117217789474 mm
+---------------------
+[INFO] epoch 19
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:24<00:00,  1.40it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:32<00:00,  1.84it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 31.11948502720189 mm
+Acceleration error: 0.7503459708285172 mm/s^2
+P2 AVG Error: 23.958153007349686 mm
+---------------------
+[INFO] epoch 20
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:04<00:00,  1.42it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:29<00:00,  1.87it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 28.426748374198855 mm
+Acceleration error: 0.752063667010596 mm/s^2
+P2 AVG Error: 22.384854242654775 mm
+---------------------
+[INFO] epoch 21
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:26<00:00,  1.40it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:33<00:00,  1.82it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 30.268778041031755 mm
+Acceleration error: 0.7746757074647124 mm/s^2
+P2 AVG Error: 22.212747371411446 mm
+---------------------
+[INFO] epoch 22
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:00<00:00,  1.42it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:30<00:00,  1.85it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 29.422399727114488 mm
+Acceleration error: 0.7327810433447587 mm/s^2
+P2 AVG Error: 22.4042678179152 mm
+---------------------
+[INFO] epoch 23
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:31<00:00,  1.45it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:28<00:00,  1.88it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 30.261607248962136 mm
+Acceleration error: 0.6961768151354918 mm/s^2
+P2 AVG Error: 23.185453814819976 mm
+---------------------
+[INFO] epoch 24
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [24:40<00:00,  1.50it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:27<00:00,  1.89it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 29.422678719976116 mm
+Acceleration error: 0.693504932561316 mm/s^2
+P2 AVG Error: 22.355427960959794 mm
+---------------------
+[INFO] epoch 25
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:41<00:00,  1.44it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:28<00:00,  1.88it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 32.29559281719468 mm
+Acceleration error: 0.6688579252569247 mm/s^2
+P2 AVG Error: 23.474321452824583 mm
+---------------------
+[INFO] epoch 26
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:30<00:00,  1.45it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:34<00:00,  1.81it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 27.490305977003704 mm
+Acceleration error: 0.6724564258891751 mm/s^2
+P2 AVG Error: 22.484194280809213 mm
+---------------------
+[INFO] epoch 27
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:05<00:00,  1.42it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:31<00:00,  1.85it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 29.657117060111773 mm
+Acceleration error: 0.7010851777739404 mm/s^2
+P2 AVG Error: 23.259937783465876 mm
+---------------------
+[INFO] epoch 28
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:49<00:00,  1.43it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:30<00:00,  1.86it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 27.369200100734588 mm
+Acceleration error: 0.6606106035859752 mm/s^2
+P2 AVG Error: 21.391694713735834 mm
+---------------------
+[INFO] epoch 29
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:53<00:00,  1.43it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:29<00:00,  1.86it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 28.547806193415216 mm
+Acceleration error: 0.6887087016500179 mm/s^2
+P2 AVG Error: 22.07839791263159 mm
+---------------------
+[INFO] epoch 30
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:48<00:00,  1.43it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:39<00:00,  1.75it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 27.69281218096078 mm
+Acceleration error: 0.6416944136350528 mm/s^2
+P2 AVG Error: 22.377216147802432 mm
+---------------------
+[INFO] epoch 31
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:33<00:00,  1.45it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:31<00:00,  1.85it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 26.38700161664338 mm
+Acceleration error: 0.6423307702925903 mm/s^2
+P2 AVG Error: 21.30760699175547 mm
+---------------------
+[INFO] epoch 32
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:54<00:00,  1.43it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:28<00:00,  1.88it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 29.641302752711624 mm
+Acceleration error: 0.6303332128841095 mm/s^2
+P2 AVG Error: 22.548500792925395 mm
+---------------------
+[INFO] epoch 33
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:29<00:00,  1.45it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:42<00:00,  1.72it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 27.08215438438363 mm
+Acceleration error: 0.6329295571011291 mm/s^2
+P2 AVG Error: 22.090225620857293 mm
+---------------------
+[INFO] epoch 34
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:29<00:00,  1.45it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:29<00:00,  1.86it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 25.812912271257893 mm
+Acceleration error: 0.6306904789230431 mm/s^2
+P2 AVG Error: 21.0165045505654 mm
+---------------------
+[INFO] epoch 35
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:52<00:00,  1.43it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:34<00:00,  1.81it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 29.330280657309306 mm
+Acceleration error: 0.6154580018095823 mm/s^2
+P2 AVG Error: 22.292641522320917 mm
+---------------------
+[INFO] epoch 36
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:45<00:00,  1.44it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [03:21<00:00,  1.38it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 26.428407992575796 mm
+Acceleration error: 0.6289000814498589 mm/s^2
+P2 AVG Error: 20.847406721490067 mm
+---------------------
+[INFO] epoch 37
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:55<00:00,  1.43it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:29<00:00,  1.87it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 32.13339463496541 mm
+Acceleration error: 0.6129654064415322 mm/s^2
+P2 AVG Error: 23.709387683090927 mm
+---------------------
+[INFO] epoch 38
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:37<00:00,  1.44it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:39<00:00,  1.75it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 26.96876124192742 mm
+Acceleration error: 0.6059587730542882 mm/s^2
+P2 AVG Error: 22.258053329562408 mm
+---------------------
+[INFO] epoch 39
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [26:08<00:00,  1.41it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:27<00:00,  1.89it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 27.339236107180472 mm
+Acceleration error: 0.5973831876450593 mm/s^2
+P2 AVG Error: 21.589982145864607 mm
+---------------------
+[INFO] epoch 40
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:54<00:00,  1.43it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:31<00:00,  1.85it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 27.743574776760532 mm
+Acceleration error: 0.60813026560291 mm/s^2
+P2 AVG Error: 21.293380904473974 mm
+---------------------
+[INFO] epoch 41
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [23:13<00:00,  1.59it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [03:19<00:00,  1.40it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 26.969702204821854 mm
+Acceleration error: 0.6117506519617031 mm/s^2
+P2 AVG Error: 21.599239847811422 mm
+---------------------
+[INFO] epoch 42
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:54<00:00,  1.43it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [02:43<00:00,  1.71it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 27.175930509918526 mm
+Acceleration error: 0.594421895748087 mm/s^2
+P2 AVG Error: 21.77459937021537 mm
+---------------------
+[INFO] epoch 43
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:45<00:00,  1.44it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [03:21<00:00,  1.39it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 26.448554302680552 mm
+Acceleration error: 0.6072177808599108 mm/s^2
+P2 AVG Error: 21.35244149398971 mm
+---------------------
+[INFO] epoch 44
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2219/2219 [25:45<00:00,  1.44it/s]
+[INFO] Evaluation
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 279/279 [03:16<00:00,  1.42it/s]
+15 actions: ['Direction', 'Discuss', 'Eating', 'Greet', 'Phone', 'Photo', 'Pose', 'Purchase', 'Sitting', 'SittingDown', 'Smoke', 'Wait', 'Walk', 'WalkDog', 'WalkTwo']
+P1 Action Err: {final_result}
+P2 Action Err: {final_result_procrustes}
+--------------------
+P1 Avg Error: 28.12465306381127 mm
+Acceleration error: 0.5827276040003844 mm/s^2
+P2 AVG Error: 22.491162981458015 mm
